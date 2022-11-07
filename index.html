@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <title>IG Bootstrap Photo feed</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="navbar bg-light mx-3">
+          <div class="col-10">
+            <span class="navbar-brand fw-bold"><i class="fa-brands fa-instagram"></i>Instagram</span>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#CreatePostModal">
+              Create a new Post
+            </button>
+            <div class="modal fade" id="CreatePostModal" tabindex="-1" aria-labelledby="CreatePostModal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label fw-bold">Caption:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="btn btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="btn btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpv4MI500z8tFcWDyD-TBOYsmfQIIrK56pAg&usqp=CAU"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://cdn.conceptartempire.com/images/10/7689/14-underwater-fantasy-environment-concept-art.jpg"
+                  alt="Some image"
+                />
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://i.pinimg.com/736x/5f/82/cd/5f82cdc9f24617b506536d20323c3de6.jpg"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Helianthus-yellow-flower-pixabay.jpg"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://www.akc.org/wp-content/uploads/2017/11/Samoyed-standing-in-the-forest.jpg"
+                  alt="Some image"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="data:image/jpeg;base64,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"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                  <img
+                  class="w-100 h-100"
+                  src="https://i.pinimg.com/originals/9d/45/0f/9d450f5db4c5ec2d0d32435860750e93.jpg"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://st2.depositphotos.com/2166845/5890/i/450/depositphotos_58906929-stock-photo-cairn-terrier-puppy.jpg"
+                  alt="Some image"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpv4MI500z8tFcWDyD-TBOYsmfQIIrK56pAg&usqp=CAU"
+                  alt="Some image"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg"
+                  alt="Nice Photo"
+                />
+              </div>
+              <div class="col-4 overflow-hidden gy-3 gx-3">
+                <img
+                  class="w-100 h-100"
+                  src="https://cdn.conceptartempire.com/images/10/7689/14-underwater-fantasy-environment-concept-art.jpg"
+                  alt="Nice art"
+                />
+              </div>
+            </div>
+          </div>            
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class="container offset-2">
+            <div class="row">
+              <div class="col-8 mx-auto my-4">
+                <div class="card">
+                  <div class="card-header bg-white">
+                    <h2 class="d-inline">Cool Dog</h2>
+                    <p class="float-end d-inline my-2">10/10</p>
+                  </div>
+                  <div class="card-body p-0">
+                    <img class="w-100 h-100" src="https://st2.depositphotos.com/2166845/5890/i/450/depositphotos_58906929-stock-photo-cairn-terrier-puppy.jpg" alt="Cool Dog">
+                  </div>
+                  <div class="card-footer bg-white fs-5">
+                    <p class="fw-bold"> 204 likes </p>
+                    <p>This is a very cool dog i found while i was walking at the park. Reminds me of a certain dog but i don't exactly remember which.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 mx-auto my-4">
+                <div class="card">
+                  <div class="card-header bg-white">
+                    <h2 class="d-inline">Beatiful Art</h2> 
+                    <p class="float-end d-inline my-2">06/10</p>
+                  </div>
+                <div class="card-body p-0">
+                  <img class="w-100 h-100" src="https://cdn.conceptartempire.com/images/10/7689/14-underwater-fantasy-environment-concept-art.jpg" alt="Beatiful Art">
+                </div>
+                <div class="card-footer bg-white fs-5">
+                  <p class="fw-bold"> 3572 likes </p>
+                  <p>This is a very cool art i found while I was surfing the internet. Reminds me of a certain picture but i don't exactly remember which.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 mx-auto my-4">
+              <div class="card">
+                <div class="card-header bg-white">
+                    <h2 class="d-inline">Nice Sunflowers</h2>
+                    <p class="float-end d-inline my-2">3/10</p>
+                  </div>
+                  <div class="card-body p-0">
+                    <img class="w-100 h-100" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Helianthus-yellow-flower-pixabay.jpg" alt="Nice Sunflowrs">
+                  </div>
+                  <div class="card-footer bg-white fs-5">
+                    <p class="fw-bold"> 689 likes </p>
+                    <p>This are very nice sunflowers I found while I was walking at a farn. Reminds me of a certain person but i don't exactly remember who.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/abedf3490e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
